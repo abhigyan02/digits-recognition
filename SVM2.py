@@ -23,7 +23,6 @@ predicted = classifier.predict(data[train_test_split:])
 
 confusionMatrix = confusion_matrix(expected, predicted, labels=classifier.classes_)
 display = ConfusionMatrixDisplay(confusion_matrix=confusionMatrix, display_labels=classifier.classes_)
-print('Confusion Matrix: ')
 display.plot()
 plt.show()
 
